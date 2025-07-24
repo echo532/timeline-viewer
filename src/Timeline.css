@@ -1,0 +1,42 @@
+/* Timeline.css */
+.timeline-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.timeline-bar {
+  position: absolute;
+  width: 4px;
+  background: #333;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timeline-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.timeline-item {
+  position: relative;
+  margin: 2rem 0;
+  width: 50%;
+  padding: 1rem;
+}
+
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item.right {
+  left: 50%;
+  text-align: left;
+}
