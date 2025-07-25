@@ -1,7 +1,9 @@
 /* Timeline.css */
 .timeline-container {
   position: relative;
-  width: 100%;
+  width: 600px; /* or some fixed width */
+  max-width: 90vw;
+  margin: 0 auto; /* this centers the container horizontally */
   display: flex;
   justify-content: center;
   padding: 2rem 0;
@@ -9,12 +11,12 @@
 
 .timeline-bar {
   position: absolute;
-  width: 4px;
-  background: #333;
   top: 0;
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 50%; /* 50% from left edge of container */
+  width: 4px;
+  background-color: #333;
+  transform: translateX(-50%); /* pull it back half its width */
 }
 
 .timeline-items {
